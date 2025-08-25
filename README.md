@@ -1,4 +1,4 @@
-Credit Card Fraud Detection using K-Nearest Neighbors (KNN)
+# Credit Card Fraud Detection using K-Nearest Neighbors (KNN)
 📌 Project Overview
 This project applies the K-Nearest Neighbors (KNN) algorithm to detect fraudulent credit card transactions.
 The dataset is highly imbalanced, as fraudulent transactions make up only a small fraction of the total.
