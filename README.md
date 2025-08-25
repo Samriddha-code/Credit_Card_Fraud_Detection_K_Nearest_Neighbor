@@ -1,24 +1,49 @@
-# Credit Card Fraud Detection with K-Nearest Neighbors
+Credit Card Fraud Detection using K-Nearest Neighbors (KNN)
+📌 Project Overview
+This project applies the K-Nearest Neighbors (KNN) algorithm to detect fraudulent credit card transactions.
+The dataset is highly imbalanced, as fraudulent transactions make up only a small fraction of the total.
 
-This project uses the K-Nearest Neighbors (KNN) algorithm to detect fraudulent credit card transactions. The dataset contains anonymized features, and the target variable indicates whether a transaction is fraud or not. The dataset is highly imbalanced, with few fraud cases.
+The aim is to build a baseline machine learning pipeline for fraud detection while addressing the challenges of working with imbalanced datasets.
 
-## Key Steps
+📂 Key Steps
+Data Loading & Exploration
 
-- Data loading and exploration
-- Feature scaling using StandardScaler
-- Train-test splitting
-- Training a KNN classifier
-- Model evaluation with confusion matrix and classification report
+Load and inspect the dataset.
 
-## Important Notes
+Understand the class distribution (fraud vs non-fraud).
 
-- Due to class imbalance, precision, recall, and F1-score are better indicators of model performance than accuracy.
-- This is a basic project demonstrating core machine learning workflow with Python.
+Data Preprocessing
 
-## Possible Improvements
+Apply StandardScaler for feature scaling.
 
-- Use oversampling methods like SMOTE to handle imbalance
-- Hyperparameter tuning for KNN
-- Evaluate other classifiers and perform cross-validation
-- Visualize ROC and Precision-Recall curves
+Split dataset into training and testing sets.
 
+Model Training
+
+Train a KNN Classifier on the training dataset.
+
+Experiment with different values of n_neighbors.
+
+Model Evaluation
+
+Evaluate performance using:
+
+Confusion Matrix
+
+Classification Report (Precision, Recall, F1-score)
+
+Focus on precision, recall, and F1-score instead of accuracy due to imbalance.
+
+📊 Why Not Just Accuracy?
+In fraud detection, accuracy can be misleading because the dataset is dominated by legitimate transactions.
+A model predicting "not fraud" every time could achieve >99% accuracy but fail to detect actual fraud cases.
+Therefore, this project emphasizes Precision, Recall, and F1-score as core evaluation metrics.
+
+🛠️ Tools & Libraries Used
+Python 3.x
+
+Scikit-learn for KNN and evaluation metrics
+
+Pandas & NumPy for data handling
+
+Matplotlib & Seaborn for visualization
